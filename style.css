@@ -1,0 +1,149 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+header {
+   font-family: "Reddit Mono";
+   width: 100%;
+   background-color: teal;
+   padding: 30px 0;
+}
+h1 {
+   text-align: center;
+   color:white;
+   font-size: 2.2rem;
+   text-shadow: 0px 0px 10px black;
+}
+h2 {
+   text-align: center;
+   font-size: 1.7rem;
+   color: white;
+   text-shadow: 0px 0px 10px black;
+}
+h3 {
+   font-size: 1.7rem;
+}
+main {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   margin-top: 50px;
+}
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   background-color: teal;
+   color: white;
+   border: 2px solid black;
+   height: 380px;
+   width: 350px;
+   border-radius: 10px;
+   margin: 50px auto;
+   padding: 15px;
+   font-size: 1.1rem;
+   text-shadow: 0px 0px 10px black;
+   font-family: "Reddit Mono";
+}
+.zoneSaisie {
+   display: flex;
+   flex-direction: column;
+   align-items: baseline;
+}
+input {
+   font-size: 16px;
+   border-radius: 5px;
+   border: 1px solid black;
+   padding: 5px;
+}
+.btn {
+   display: flex;
+}
+#effacer {
+   background-color: grey;
+   color: white;
+   margin-left: 5px;
+   
+}
+#btnCalculer {
+   background-color: #48d1cc;
+   color: white;
+}
+#effacer, #btnCalculer {
+   cursor: pointer;
+   width: 70px;
+   height: 40px;
+   border: 1px solid black;
+   border-radius: 5px;
+}
+#btnCalculer:hover {
+  background-color: #40e0d0;
+  transition: 0.4s;
+  color: black;
+}
+#effacer:hover {
+   background-color: lightgrey;
+   color: black;
+   transition: 0.4s;
+}
+.zoneImc {
+   font-size: 1.2rem;
+}
+table {
+   font-family: "Reddit Mono";
+   border-collapse: collapse;
+   width: 60%;
+   height: 380px;
+   text-align: center;
+   background-color: teal;
+   margin: 50px auto;
+   color: white;
+   font-size: 1.2rem;
+   text-shadow: 0px 0px 10px black;
+}
+th, td {
+   border: 1px solid white;
+   padding: 20px;
+}
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 50px 5px 0px 5px
+}
+p {
+  margin: 50px 5px 0px 5px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 980px) {
+  h1 {
+     font-size: 2rem;
+  }
+  h2 {
+     font-size: 1.5rem;
+  }
+   main {display: grid;
+       grid-template-columns: 1fr;
+  }
+   .container {
+       margin: auto
+   }
+   table {
+     margin: 20px auto;
+     }
+}
+@media screen and (max-width: 480px) {
+   .container, table {
+      margin-left: 20px;
+   }
+}
+@media screen and (max-width: 400px) {
+   h1 {
+      font-size: 1.3rem;
+   }
+   h2 {
+      font-size: 1rem;
+   }
+   .container {
+      width: 300px;
+   }
+}

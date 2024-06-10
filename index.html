@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculer votre IMC</title>
+    <link href="style.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reddit+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Calcul de l'indice de masse corporel</h1>
+      <br />
+      <h2>Interprétation de l'imc d'après l'OMS</h2>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="zoneGenre">
+          <h3>Indiquer votre genre :</h3>
+          <div class="optionGenre">
+            <input type="radio" name="optionGenre" id="homme" />
+            <label for="homme">Homme</label>
+            <input type="radio" name="optionGenre" id="femme" />
+            <label for="femme">Femme</label>
+          </div>
+        </div>
+        <form class="form">
+          <div class="zoneSaisie">
+            <label for="poids">Poids en kilos :</label>
+            <input type="text" id="poids" name="poids" placeholder="67" /><br />
+            <label for="taille">Taille en mètre :</label>
+            <input
+              type="text"
+              id="taille"
+              name="taille"
+              placeholder="1.77"
+            /><br />
+            <div>
+              <input type="submit" id="btnCalculer" value="Calculer" />
+              <input type="reset" id="effacer" value="Effacer" />
+            </div>
+          </div>
+
+          <div class="zoneImc">
+            Votre Imc est de :&nbsp;<span id="zoneImc"></span>
+          </div>
+          <div id="erreur"></div>
+        </form>
+      </section>
+
+      <section class="infos">
+        <table>
+          <tr>
+            <th>Indice de masse corporelle (IMC)</th>
+            <th>Interprétation (d’après l’OMS)</th>
+          </tr>
+
+          <tr>
+            <td>Moins de 18.5</td>
+            <td>Insuffisance pondérale (maigreur)</td>
+          </tr>
+
+          <tr>
+            <td>Entre 18.5 et 25</td>
+            <td>Corpulence normale</td>
+          </tr>
+
+          <tr>
+            <td>Entre 25 et 30</td>
+            <td>Surpoids</td>
+          </tr>
+
+          <tr>
+            <td>Entre 30 et 35</td>
+            <td>Obésité modérée</td>
+          </tr>
+
+          <tr>
+            <td>Plus de 35</td>
+            <td>Obésité sévère</td>
+          </tr>
+        </table>
+      </section>
+    </main>
+
+    <div class="infos-complementaires">
+      <h4>
+        L'IMC doit être apprécié différemment en fonction de l’âge de la
+        personne, de son activité physique, de sa génétique, de sa santé, de
+        l’histoire de son poids, etc.
+      </h4>
+      <p>
+        Son principal défaut est qu’il ne prend pas en compte la composition
+        corporelle, c’est-à-dire la masse osseuse,<br />la masse musculaire, la
+        masse grasse et la masse hydrique, souligne Fabienne Pommera.<br /><br />
+
+        Deux personnes peuvent donc avoir un IMC identique, mais des corpulences
+        différentes. C’est le cas<br />des grands sportifs. De même, l’IMC peut
+        être faussé chez une personne faisant de la rétention d’eau,<br />ou
+        présentant une ossature très légère.<br /><br />
+
+        D’autres reproches lui sont adressés :<br /><br />
+
+        L’IMC ne tient pas compte du sexe et de l’origine ethnique des patients,
+        qui influencent leur métabolisme.<br /><br />
+        L’IMC ne permet pas de déceler d’éventuels troubles alimentaires. Une
+        personne obèse, dont l’IMC<br />est élevé, peut manger correctement d’un
+        point de vue nutritionnel, tandis qu’une personne<br />boulimique peut
+        présenter un IMC normal.<br /><br />
+        L’IMC ne prend pas en compte l’aspect esthétique et le ressenti du
+        patient qui peut avoir un IMC<br />"normal" et être insatisfait de son
+        corps.<br /><br />
+        L’IMC ne tient pas compte de l’activité physique, des consommations
+        d’alcool et de tabac, qui ont<br />une influence reconnue sur la
+        santé.<br /><br />
+
+        À noter : l’indice de masse corporelle ne suffit pas à diagnostiquer une
+        obésité ou un surpoids. Les<br />professionnels utilisent également
+        l’impédancemétrie pour évaluer la masse grasse et se fient à la<br />mesure
+        du tour de taille qui permet de mesurer l’excès de graisse viscérale.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
